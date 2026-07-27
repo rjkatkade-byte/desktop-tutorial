@@ -14,9 +14,9 @@
         h2 { font-size: 1.8rem; margin-top: 0; color: #f1f5f9; }
         .benefit-list { text-align: left; margin: 25px 0; padding-left: 20px; color: #cbd5e1; line-height: 1.8; }
         .email-form { display: flex; flex-direction: column; gap: 15px; margin-top: 25px; }
-        input[type="email"] { padding: 15px; font-size: 1rem; border-radius: 8px; border: 1px solid #475569; background-color: #0f172a; color: white; outline: none; }
-        input[type="email"]:focus { border-color: #6366f1; box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2); }
-        .cta-btn { background: linear-gradient(135deg, #4f46e5, #6366f1); color: white; padding: 16px; font-size: 1.1rem; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.2s ease-in-out; box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3); }
+        input[type="text"], input[type="email"] { padding: 15px; font-size: 1rem; border-radius: 8px; border: 1px solid #475569; background-color: #0f172a; color: white; outline: none; text-align: left; }
+        input[type="text"]:focus, input[type="email"]:focus { border-color: #6366f1; box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2); }
+        .cta-btn { background: linear-gradient(135deg, #4f46e5, #6366f1); color: white; padding: 16px; font-size: 1.1rem; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.2s ease-in-out; box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3); width: 100%; }
         .cta-btn:hover { background: linear-gradient(135deg, #4338ca, #4f46e5); transform: translateY(-2px); }
         footer { margin-top: 40px; padding: 20px; color: #64748b; font-size: 0.9rem; }
         footer a { color: #818cf8; text-decoration: none; margin: 0 10px; }
@@ -40,8 +40,10 @@
             <li>✅ Hidden AI prompt scripts to automate your copywriting</li>
         </ul>
 
-        <form class="email-form" onsubmit="alert('Success! Your blueprint is on the way.'); return false;">
-            <input type="email" placeholder="Enter your best email address..." required>
+        <!-- Live Linked Formspree Endpoint Connector -->
+        <form class="email-form" action="https://formspree.io" method="POST">
+            <input type="text" name="name" placeholder="Enter your name..." required>
+            <input type="email" name="email" placeholder="Enter your best email address..." required>
             <button type="submit" class="cta-btn">Claim Free Roadmap ➔</button>
         </form>
     </div>
