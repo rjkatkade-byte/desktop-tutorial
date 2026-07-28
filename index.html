@@ -1,60 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Master Digital Marketing | Free Roadmap</title>
-    <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background-color: #0f172a; color: #f8fafc; text-align: center; }
-        header { background: linear-gradient(135deg, #1e1b4b, #311042); color: white; padding: 80px 20px; border-bottom: 3px solid #6366f1; }
-        h1 { margin: 0; font-size: 2.8rem; letter-spacing: -1px; color: #f8fafc; }
-        h1 span { color: #818cf8; }
-        header p { font-size: 1.3rem; color: #94a3b8; margin-top: 15px; max-width: 600px; margin-left: auto; margin-right: auto; }
-        .container { max-width: 550px; margin: -50px auto 60px auto; padding: 40px 30px; background: #1e293b; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid #334155; }
-        h2 { font-size: 1.8rem; margin-top: 0; color: #f1f5f9; }
-        .benefit-list { text-align: left; margin: 25px 0; padding-left: 20px; color: #cbd5e1; line-height: 1.8; }
-        .email-form { display: flex; flex-direction: column; gap: 15px; margin-top: 25px; }
-        input[type="text"], input[type="email"] { padding: 15px; font-size: 1rem; border-radius: 8px; border: 1px solid #475569; background-color: #0f172a; color: white; outline: none; text-align: left; }
-        input[type="text"]:focus, input[type="email"]:focus { border-color: #6366f1; box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2); }
-        .cta-btn { background: linear-gradient(135deg, #4f46e5, #6366f1); color: white; padding: 16px; font-size: 1.1rem; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.2s ease-in-out; box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3); width: 100%; }
-        .cta-btn:hover { background: linear-gradient(135deg, #4338ca, #4f46e5); transform: translateY(-2px); }
-        footer { margin-top: 40px; padding: 20px; color: #64748b; font-size: 0.9rem; }
-        footer a { color: #818cf8; text-decoration: none; margin: 0 10px; }
-        footer a:hover { text-decoration: underline; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flowbyte Automations - Client Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body>
+<body class="bg-slate-900 text-slate-100 font-sans min-h-screen flex flex-col md:flex-row">
 
-    <header>
-        <h1>Learn <span>Digital Marketing</span> From Scratch</h1>
-        <p>Stop wasting time on scattered tutorials. Get a structured, step-by-step roadmap to launch your online career or business today.</p>
+  <aside class="w-full md:w-64 bg-slate-800 border-r border-slate-700 p-6 flex flex-col justify-between">
+    <div>
+      <div class="flex items-center gap-3 mb-8">
+        <div class="p-2 bg-indigo-600 rounded-lg">
+          <i data-lucide="bot" class="w-6 h-6 text-white"></i>
+        </div>
+        <h1 class="text-xl font-bold text-white tracking-wide">Flowbyte Automations</h1>
+      </div>
+      <nav class="space-y-2">
+        <a href="#" class="flex items-center gap-3 px-4 py-3 bg-indigo-600/20 text-indigo-400 rounded-xl font-medium border border-indigo-500/30">
+          <i data-lucide="layout-dashboard" class="w-5 h-5"></i> Dashboard
+        </a>
+        <a href="#" class="flex items-center gap-3 px-4 py-3 text-slate-400 hover:bg-slate-700/50 hover:text-slate-200 rounded-xl font-medium transition">
+          <i data-lucide="share-2" class="w-5 h-5"></i> Facebook & Instagram
+        </a>
+        <a href="#" class="flex items-center gap-3 px-4 py-3 text-slate-400 hover:bg-slate-700/50 hover:text-slate-200 rounded-xl font-medium transition">
+          <i data-lucide="zap" class="w-5 h-5"></i> Automation Rules
+        </a>
+      </nav>
+    </div>
+    <div class="pt-6 border-t border-slate-700">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-slate-600 flex items-center justify-center font-bold">RJ</div>
+        <div>
+          <p class="text-sm font-semibold text-slate-200">Admin</p>
+          <p class="text-xs text-slate-400">Connected to Google Sheets</p>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="flex-1 p-6 md:p-10 overflow-y-auto">
+    <header class="mb-8">
+      <h2 class="text-2xl font-bold text-white">Automation Control Center</h2>
+      <p class="text-slate-400 text-sm">Submit an automation rule below - it logs straight to your Google Sheet.</p>
+      <p id="connection-status" class="text-xs mt-2 text-emerald-400">✅ Connected to your Google Sheets webhook.</p>
     </header>
 
-    <div class="container">
-        <h2>Download the Free 2026 Strategy Guide</h2>
-        <p style="color: #94a3b8; font-size: 1.05rem;">Enter your email below to get instant access to the exact growth blueprints used by top agencies.</p>
-        
-        <ul class="benefit-list">
-            <li>✅ 5 Core Pillars: SEO, Meta Ads, & Analytics explained simply</li>
-            <li>✅ The T-Shaped Marketer blueprint for high-paying roles</li>
-            <li>✅ Hidden AI prompt scripts to automate your copywriting</li>
-        </ul>
+    <section class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2 bg-slate-800 p-6 rounded-2xl border border-slate-700 space-y-4">
+        <h3 class="text-lg font-bold text-white flex items-center gap-2">
+          <i data-lucide="sliders" class="w-5 h-5 text-indigo-400"></i> Configure Automation Trigger
+        </h3>
 
-        <!-- Form Submission Configuration Fixed -->
-        <form class="email-form" action="https://formspree.io" method="POST">
-            <input type="text" name="name" placeholder="Enter your name..." required>
-            <input type="email" name="email" placeholder="Enter your best email address..." required>
-            <button type="submit" class="cta-btn">Claim Free Roadmap ➔</button>
+        <form id="automation-form" class="space-y-4">
+          <div>
+            <label class="block text-sm font-medium text-slate-300 mb-2">Your Name</label>
+            <input type="text" id="userName" placeholder="e.g. Ruksharaj" required
+              class="w-full bg-slate-900 border border-slate-700 text-slate-200 rounded-xl p-3 focus:outline-none focus:border-indigo-500">
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-slate-300 mb-2">Your Email</label>
+            <input type="email" id="userEmail" placeholder="you@example.com" required
+              class="w-full bg-slate-900 border border-slate-700 text-slate-200 rounded-xl p-3 focus:outline-none focus:border-indigo-500">
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-slate-300 mb-2">Target Platform</label>
+            <select id="platform" class="w-full bg-slate-900 border border-slate-700 text-slate-200 rounded-xl p-3 focus:outline-none focus:border-indigo-500">
+              <option value="Instagram">Instagram</option>
+              <option value="Facebook">Facebook</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-slate-300 mb-2">Action / Trigger Event</label>
+            <select id="action" class="w-full bg-slate-900 border border-slate-700 text-slate-200 rounded-xl p-3 focus:outline-none focus:border-indigo-500">
+              <option value="Auto-DM">Auto-DM on New Follower / Request</option>
+              <option value="Auto-Comment">Auto-Reply to Comments containing Keyword</option>
+              <option value="Auto-Accept">Auto-Accept Friend / Connection Requests</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-slate-300 mb-2">Triggers / Keywords</label>
+            <input type="text" id="keywords" placeholder="e.g. price, info, quote"
+              class="w-full bg-slate-900 border border-slate-700 text-slate-200 rounded-xl p-3 focus:outline-none focus:border-indigo-500">
+          </div>
+
+          <button type="submit" id="submitBtn"
+            class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-medium py-3 rounded-xl transition shadow-lg shadow-indigo-600/30">
+            Save & Log Automation Rule
+          </button>
         </form>
-    </div>
+      </div>
 
-    <footer>
-        <p>© 2026 Marketing Sandbox. Built with GitHub Pages.</p>
-        <p>
-            <a href="https://github.com" target="_blank">GitHub Profile</a> | 
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-        </p>
-    </footer>
+      <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+        <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+          <i data-lucide="activity" class="w-5 h-5 text-emerald-400"></i> Logged Rules (this session)
+        </h3>
+        <div id="rules-list" class="space-y-3">
+          <p class="text-sm text-slate-500">No rules logged yet.</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <script>
+    lucide.createIcons();
+
+    // ⚠️ REPLACE THIS with your own Apps Script /exec URL after deploying Code.gs
+    const webhookUrl = "https://script.google.com/macros/s/AKfycbzzyv2RFt4dGzTYJ8-YYDkEVWmW4Y2cQh2w-BLv8vp_COr0egZAqleXXVIhZ_WJluDoig/exec";
+
+    const form = document.getElementById('automation-form');
+    const rulesList = document.getElementById('rules-list');
+    const submitBtn = document.getElementById('submitBtn');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      if (webhookUrl.includes("PASTE_YOUR")) {
+        alert("Please set your webhookUrl first (see comment near the bottom of the HTML file).");
+        return;
+      }
+
+      const name = document.getElementById('userName').value;
+      const email = document.getElementById('userEmail').value;
+      const platform = document.getElementById('platform').value;
+      const action = document.getElementById('action').value;
+      const keywords = document.getElementById('keywords').value || 'Any Trigger';
+
+      const payload = {
+        name: name,
+        email: email,
+        keyword: platform + " - " + action + " (" + keywords + ")"
+      };
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Saving...";
+
+      try {
+        const response = await fetch(webhookUrl, {
+          method: "POST",
+          body: JSON.stringify(payload)
+        });
+
+        const result = await response.json();
+
+        if (result.result === "success") {
+          if (rulesList.querySelector('p.text-slate-500')) {
+            rulesList.innerHTML = "";
+          }
+          const ruleCard = document.createElement('div');
+          ruleCard.className = 'p-4 bg-slate-900 rounded-xl border border-slate-700/60 flex items-start justify-between';
+          ruleCard.innerHTML = `
+            <div>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-indigo-500/20 text-indigo-400">${platform}</span>
+              <p class="text-sm font-medium text-slate-200 mt-1">${action} ("${keywords}")</p>
+            </div>
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 mt-1"></span>
+          `;
+          rulesList.prepend(ruleCard);
+          form.reset();
+        } else {
+          alert("Error logging data: " + result.error);
+        }
+      } catch (err) {
+        console.error("Network or script error:", err);
+        alert("Failed to connect to the backend webhook. Check the URL and your internet connection.");
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Save & Log Automation Rule";
+      }
+    });
+  </script>
 </body>
 </html>
