@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AR Enterprises — Omni-Channel Social & AI Web Automation Core</title>
-    <!-- High-Performance Typography Matrix -->
-    <link rel="preconnect" href="https://googleapis.com">
+    <!-- High-Performance Typography Matrix (Fixed Domain Link) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
         /* Top-Notch Premium Cinematic Global System Tokens */
@@ -168,6 +168,25 @@
         }
         .workspace-header h1 { font-size: 2.5rem; letter-spacing: -0.03em; }
 
+        /* Guide documentation action trigger btn styling */
+        .guide-btn {
+            background-color: rgba(59, 130, 246, 0.1);
+            color: var(--border-active);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            font-family: inherit;
+            transition: all 0.2s ease;
+        }
+        .guide-btn:hover {
+            background-color: var(--border-active);
+            color: var(--text-white);
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+        }
+
         /* The Asymmetric Immersive 3D Animated Grid Setup */
         .kinetic-dashboard-grid {
             display: grid;
@@ -252,25 +271,3 @@
         .feed-header-row {
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            margin-bottom: 32px;
-        }
-        .live-dot {
-            width: 8px;
-            height: 8px;
-            background-color: #EF4444;
-            border-radius: 50%;
-            display: inline-block;
-            box-shadow: 0 0 10px #EF4444;
-            animation: pulseStream 1.5s infinite;
-        }
-        @keyframes pulseStream {
-            0% { transform: scale(0.9); opacity: 0.6; }
-            50% { transform: scale(1.1); opacity: 1; }
-            100% { transform: scale(0.9); opacity: 0.6; }
-        }
-
-        .feed-table {
-            width: 100%;
-            border-collapse: collapse;
-            text-align: left;
