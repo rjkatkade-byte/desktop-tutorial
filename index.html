@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AR Enterprises — Omni-Channel Social & AI Web Automation Core</title>
-    <!-- High-Performance Typography Matrix (Fixed Domain Link) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
-        /* Top-Notch Premium Cinematic Global System Tokens */
         :root {
             --bg-deep-space: #030712;
             --bg-panel-glass: rgba(10, 15, 30, 0.75);
@@ -19,8 +17,6 @@
             --border-active: #3B82F6;
             --text-white: #FFFFFF;
             --text-dim: #94A3B8;
-            
-            /* High-Conversion Branding Gradient Channels */
             --gradient-primary: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 50%, #EC4899 100%);
             --gradient-meta-fb: linear-gradient(135deg, #1877F2 0%, #0052CC 100%);
             --gradient-meta-ig: linear-gradient(135deg, #F9CE34 0%, #EE2A7B 50%, #6228D7 100%);
@@ -36,38 +32,23 @@
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
             overflow-x: hidden;
-            perspective: 1200px; /* Activates global immersive perspective rendering engine */
+            perspective: 1200px;
         }
 
-        h1, h2, h3, h4, .font-cmd {
+        h1, h2, h3, h4 {
             font-family: 'Space Grotesk', sans-serif;
             font-weight: 700;
             color: var(--text-white);
             letter-spacing: -0.02em;
         }
 
-        /* Ambient Cosmic Plasma Energy Nodes */
-        .bg-glow-orb {
-            position: absolute;
-            width: 500px;
-            height: 500px;
-            border-radius: 50%;
-            background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(0,0,0,0) 70%);
-            top: -100px;
-            right: -100px;
-            z-index: -1;
-            pointer-events: none;
-            filter: blur(40px);
-        }
-
-        /* Responsive Dashboard Split Wrapper Grid */
         .dashboard-container {
             display: grid;
             grid-template-columns: 320px 1fr;
             min-height: 100vh;
+            width: 100vw;
         }
 
-        /* 3D Sidebar Console Panel Frame */
         aside.sidebar-console {
             background: var(--bg-panel-glass);
             backdrop-filter: blur(24px);
@@ -77,8 +58,6 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            transform-style: preserve-3d;
-            transform: translateZ(10px);
         }
 
         .branding-header {
@@ -110,7 +89,6 @@
             z-index: -1;
         }
 
-        /* Interactive Native Dropdown Configuration Layouts */
         .dropdown-menu-box {
             margin-top: 32px;
             display: flex;
@@ -137,7 +115,6 @@
             font-family: inherit;
             outline: none;
             width: 100%;
-            transition: all 0.3s ease;
         }
         
         .interactive-select {
@@ -148,15 +125,9 @@
             background-position: right 16px center;
             background-size: 16px;
         }
-        .interactive-select:focus, .interactive-select:hover, .interactive-input:focus {
-            border-color: var(--border-active);
-            box-shadow: 0 0 15px rgba(59, 130, 246, 0.25);
-        }
 
-        /* 3D Kinetic Control Feed & Cards Elements */
         main.main-workspace {
             padding: 48px;
-            max-width: 1400px;
             width: 100%;
         }
 
@@ -166,9 +137,8 @@
             align-items: center;
             margin-bottom: 48px;
         }
-        .workspace-header h1 { font-size: 2.5rem; letter-spacing: -0.03em; }
+        .workspace-header h1 { font-size: 2.5rem; }
 
-        /* Guide documentation action trigger btn styling */
         .guide-btn {
             background-color: rgba(59, 130, 246, 0.1);
             color: var(--border-active);
@@ -178,22 +148,13 @@
             font-size: 0.95rem;
             font-weight: 600;
             cursor: pointer;
-            font-family: inherit;
-            transition: all 0.2s ease;
-        }
-        .guide-btn:hover {
-            background-color: var(--border-active);
-            color: var(--text-white);
-            box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
         }
 
-        /* The Asymmetric Immersive 3D Animated Grid Setup */
         .kinetic-dashboard-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 32px;
             margin-bottom: 48px;
-            perspective: 1000px;
         }
 
         .kinetic-card {
@@ -201,17 +162,7 @@
             border: 1px solid var(--border-glow);
             border-radius: 20px;
             padding: 32px;
-            transform-style: preserve-3d;
-            transition: transform 0.5s cubic-bezier(0.1, 0.8, 0.2, 1), border-color 0.3s ease, box-shadow 0.3s ease;
             cursor: pointer;
-            position: relative;
-        }
-        
-        /* Premium Layer Floating Parallax Mechanics */
-        .kinetic-card:hover {
-            transform: rotateX(12deg) rotateY(-8deg) translateZ(25px);
-            border-color: rgba(255, 255, 255, 0.25);
-            box-shadow: -15px 20px 40px rgba(0, 0, 0, 0.6), 0 0 30px rgba(99, 102, 241, 0.1);
         }
 
         .card-icon-header {
@@ -219,7 +170,6 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 24px;
-            transform: translateZ(30px);
         }
 
         .platform-icon-pill {
@@ -232,7 +182,6 @@
         }
         .platform-icon-pill.fb { background: var(--gradient-meta-fb); }
         .platform-icon-pill.ig { background: var(--gradient-meta-ig); }
-        .platform-icon-pill.trending { background: var(--gradient-primary); }
         .platform-icon-pill.ai-web { background: var(--gradient-ai-engine); }
 
         .growth-badge {
@@ -244,30 +193,62 @@
             border-radius: 6px;
         }
 
-        .kinetic-card h3 { font-size: 1.4rem; margin-bottom: 8px; transform: translateZ(40px); }
-        .kinetic-card p { font-size: 0.95rem; line-height: 1.6; transform: translateZ(20px); margin-bottom: 24px; }
+        .kinetic-card h3 { font-size: 1.4rem; margin-bottom: 8px; }
+        .kinetic-card p { font-size: 0.95rem; margin-bottom: 24px; }
 
-        /* Metric Data Readouts */
         .metric-data-row {
             display: flex;
             gap: 24px;
             border-top: 1px solid var(--border-glow);
             padding-top: 20px;
-            transform: translateZ(35px);
         }
-        .data-node h4 { font-size: 1.5rem; font-weight: 700; color: var(--text-white); }
-        .data-node p { font-size: 0.75rem; text-transform: uppercase; color: #64748B; margin-bottom: 0; margin-top: 2px; font-weight: 700; }
+        .data-node h4 { font-size: 1.5rem; color: var(--text-white); }
+        .data-node p { font-size: 0.75rem; text-transform: uppercase; color: #64748B; margin-top: 2px; font-weight: 700; }
 
-        /* Dynamic Trending Post Automation Live Feed Layout */
         .live-stream-feed {
             background-color: var(--bg-panel-glass);
             border: 1px solid var(--border-glow);
             border-radius: 20px;
             padding: 40px;
-            transform-style: preserve-3d;
-            transform: translateZ(5px);
             margin-bottom: 48px;
         }
         .feed-header-row {
             display: flex;
             justify-content: space-between;
+            align-items: center;
+            margin-bottom: 32px;
+        }
+
+        .feed-table { width: 100%; border-collapse: collapse; text-align: left; }
+        .feed-table th { padding: 16px; color: #64748B; font-size: 0.8rem; text-transform: uppercase; border-bottom: 1px solid var(--border-glow); }
+        .feed-table td { padding: 20px 16px; font-size: 0.95rem; border-bottom: 1px solid rgba(255,255,255,0.03); color: var(--text-white); }
+        
+        .trending-source-badge { background-color: rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px; font-size: 0.8rem; }
+
+        .conversion-monetization-banner {
+            background: linear-gradient(135deg, #090E1A 0%, #1E1B4B 100%);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 24px;
+            padding: 60px;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+
+        .banner-info-pane h2 { font-size: 2.4rem; margin-bottom: 16px; background: linear-gradient(90deg, #FFFFFF, #9333EA); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .banner-info-pane p { font-size: 1.1rem; color: var(--text-dim); margin-bottom: 32px; }
+        .premium-bullet-list { list-style: none; }
+        .premium-bullet-list li { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; font-size: 1rem; color: var(--text-white); }
+        .premium-bullet-list li::before { content: "✦"; color: #3B82F6; }
+
+        .pricing-checkout-card { background-color: #070A13; border: 1px solid var(--border-glow); border-radius: 16px; padding: 40px; text-align: center; }
+        .price-display-matrix h3 { font-size: 2.8rem; color: var(--text-white); margin-bottom: 4px; }
+        .price-display-matrix p { font-size: 0.85rem; color: #64748B; text-transform: uppercase; margin-bottom: 28px; }
+
+        .payment-method-selector { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 24px; }
+        .pay-tab { background: #111726; border: 1px solid var(--border-glow); border-radius: 8px; padding: 12px; color: var(--text-dim); font-size: 0.9rem; font-weight: 600; cursor: pointer; text-align: center; }
+        .pay-tab.active { background: rgba(59, 130, 246, 0.1); border-color: var(--border-active); color: var(--text-white); }
+
+        .checkout-submit-btn { display: block; width: 100%; background: var(--gradient-primary); color: var(--text-white); border: none; padding: 18px; border-radius: 12px; font-weight: 700; font-size: 1.1rem; cursor: pointer; }
+
